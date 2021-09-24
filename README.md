@@ -5,4 +5,8 @@ Link para a documentação: https://www.libertte.com.br/hello-green-world/docume
 
 Link para o nosso site: https://hello-green-world.herokuapp.com/
 
-Com este projeto conquistamos o 2° lugar no pódio. 
+Link da aplicação na Google Cloud Plataform no App Engine: https://hello-greenworld.uc.r.appspot.com/
+
+Com este projeto conquistamos o 2° lugar.
+
+O desafio era idealizar uma solução disruptiva para engajar a população quanto ao descarte adequado dos resíduos, aumentando a quantidade dos resíduos recicláveis.
