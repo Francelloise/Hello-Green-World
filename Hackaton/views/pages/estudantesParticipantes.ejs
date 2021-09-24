@@ -1,0 +1,68 @@
+<%- include('../partials/header')%>
+
+        <main class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 text-center">Estudantes Participantes</h1>
+                </div>
+
+                <!-- <% if (estudantesParticipantes == 0) { %>
+                    <div class="d-none">
+                        <div>
+                            <a href="/cadastrarLivro" class="btn btn-primary mr-5">Cadastrar Livro</a>
+                        </div>
+                    </div>
+                <% } else { %>
+                    <div class="col-12 d-flex justify-content-end">
+                        <a href="/cadastrarLivro" class="btn btn-primary mr-5">Cadastrar Livro</a>
+                    </div> 
+                <% } %> -->
+                
+
+                <div class="container">
+                    <table class="table table-hover table-striped table-light mt-5 mb-5">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Nome</th>
+                                <th class="text-center">Sobrenome</th>
+                                <th class="text-center">Email</th>
+                                <th class="text-center">Telefone</th>
+                                                           
+                                <th colspan="3" class="text-center">Pontuação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% estudantesParticipantes.forEach(function(estudante) { %>
+                                <tr>
+                                    <td class="text-center">
+                                        <%= estudante.nome %>
+                                    </td>
+                                    <td class="text-center">
+                                        <%= estudante.sobrenome %>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="/fichaEstudante/<%= estudante._id %>">
+                                            <%= estudante.email %>
+                                        </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <%= estudante.email %>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="" class="btn btn-primary">+ 1 ponto</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="" class="btn btn-primary">+ 5 pontos</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="" class="btn btn-primary">+ 10 pontos</a>
+                                    </td>
+                                </tr>
+                           <% }) %>
+                        </tbody>
+                    </table>
+                </div>                  
+            </div>
+        </main>
+
+        <%- include('../partials/footer')%>

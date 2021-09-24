@@ -1,0 +1,128 @@
+<%- include('../partials/header')%>
+
+
+<section class="headepage">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="titpage">
+                    <h2>Cadastre-se</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Cadastre-se</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida fringilla neque sit amet
+                    sollicitudin. Duis aliquam dictum feugiat.</p>
+
+                <ul class="my-5">
+                    <li class="contcad1">
+                        <span class="icon">
+                            <img src="/images/icon-trophy.png">
+                        </span>
+                        <h4>Teste 1</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida fringilla neque sit amet
+                        sollicitudin. Duis aliquam dictum feugiat.
+                    </li>
+                    <li class="contcad1">
+                        <span class="icon">
+                            <img src="/images/icon-points.png">
+                        </span>
+                        <h4>Teste 1</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida fringilla neque sit amet
+                        sollicitudin. Duis aliquam dictum feugiat.
+                    </li>
+                    <li class="contcad1">
+                        <span class="icon">
+                            <img src="/images/icon-winner.png">
+                        </span>
+                        <h4>Teste 1</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida fringilla neque sit amet
+                        sollicitudin. Duis aliquam dictum feugiat.
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col-lg-8">
+
+                <div class="container">
+
+                    <form action="/estudante/cadastrarEstudante" method="POST" class="form">
+                        <div class="row">
+                            <div class="form-group col-4">
+                                <label for="nomeDoAluno">* Nome:</label>
+                                <input class="form-control text-uppercase " type="text" id="nomeDoAluno" name="nome"
+                                    placeholder="Digite o nome do estudante" required>
+                            </div>
+
+                            <div class="form-group col-5">
+                                <label for="sobreNomeAluno">* Sobrenome:</label>
+                                <input class="form-control text-uppercase " type="text" id="sobreNomeAluno"
+                                    name="sobrenome" placeholder="Digite o sobrenome do estudante" required>
+                            </div>
+
+                            <div class="form-group col-3">
+                                <label for="dataNascimento">* Data de Nascimento:</label>
+                                <input class="form-control text-uppercase " type="date" id="dataNascimento"
+                                    name="dataNascimento" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="form-group col-6">
+                                <label for="email">* Email do Estudante:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">@</div>
+                                    </div>
+                                    <input type="email" class="form-control " name="email" id="email"
+                                        placeholder="Ex: joaoluiz342@gmail.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="senha">* Senha de Acesso:</label>
+                                <input type="password" class="form-control" name="senha" id="senha"
+                                    placeholder="********" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="escola">* Escola</label>
+                                <input class="form-control text-uppercase " type="text" id="escola" name="escola"
+                                    required>
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="telefone">* Telefone</label>
+                                <input type="tel" class="form-control " name="telefone" id="telefone"
+                                    placeholder="(xx) x xxxx-xxxx" onkeypress="$(this).mask('(00) 0000-00009')"
+                                    required>
+                            </div>
+                        </div>
+
+                        <input class="form-control d-none" id="tipo_usuario" name="tipo_usuario" value="estudante">
+
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="buttonform" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('../partials/footer')%>
